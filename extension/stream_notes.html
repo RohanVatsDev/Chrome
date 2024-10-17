@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YouTube Video Notes Generator</title>
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+  <div class="right-column">
+    <div class="header">
+      <img src="icons/pen_icon.png" class="logo" alt="StreamNotes Logo">
+      <h2>StreamNotes Generator</h2>
+    </div>
+    <input type="text" id="url_input" class="input-field" placeholder="Enter YouTube URL">
+    <div id="drop_zone" class="drop-zone">Drag & Drop YouTube URL Here</div>
+    <div id="preview-box"></div>
+    <img src="icons/loader.gif" alt="loader" width="70px" height="70px" id="loader">
+    <button class="button" id="generate-notes">Generate Notes</button>
+    <button class="button" id="summarize">Summarize</button>
+    <div class="footer-buttons">
+      <button id="previewButton" class="footer-button">Preview PDF</button>
+
+  <div class="modal-overlay" id="modalOverlay"></div>
+  <div class="modal-content" id="modalContent">
+    <button class="close-button" id="closeButton">Close</button>
+    <iframe id="pdfPreview"></iframe>
+  </div>
+      <button class="footer-button" id="Clear">Clear</button>
+    </div>
+    <button class="download-icon" id="download-icon" style="display:none;">Download Notes</button>
+  </div>
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>
